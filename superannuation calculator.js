@@ -38,7 +38,7 @@ document.querySelector("#income").addEventListener('change', (event) => {
          alert('0以上の数字を入力してください。')
      }
      
-     sgc = income * 0.095;
+     sgc = income * 0.1;
      
      cc[0] = parseFloat(sgc);
 
@@ -46,10 +46,10 @@ document.querySelector("#income").addEventListener('change', (event) => {
     
      total (cc);
     
-     if(total_cc <= 25000){
+     if(total_cc <= 27500){
      document.querySelector("#total_cc").innerHTML = total_cc; }
      else{
-        alert('Concessional contributionは年間25,000ドルを超えて拠出できません。');
+        alert('Concessional contributionは年間27,500ドルを超えて拠出できません。');
      }
      
      if(income <= 37000){
@@ -64,21 +64,21 @@ document.querySelector("#income").addEventListener('change', (event) => {
 
      document.querySelector("#listo").innerHTML = Math.round(listo);
 
-     if(income <= 36813 && income >= 0){
+     if(income <= 41112 && income >= 0){
         if(ncc >= 1000){
                 co_contribution = 500;
         }
         else{
                 co_contribution = ncc*0.5;
     }}
-    else if(income <= 51813 && income > 36813){
+    else if(income <= 56112 && income > 41112){
         if(ncc >= 1000){
-                co_contribution = 500 - 0.0333*(income - 36813);
+                co_contribution = 500 - 0.0333*(income - 41112);
             }
-        else if(ncc*0.5 >= 500 - 0.0333*(income - 36813)){
-                co_contribution = 500 - 0.0333*(income - 36813);
+        else if(ncc*0.5 >= 500 - 0.0333*(income - 41112)){
+                co_contribution = 500 - 0.0333*(income - 41112);
             }
-        else if(ncc*0.5 <= 500 - 0.0333*(income - 36813)){
+        else if(ncc*0.5 <= 500 - 0.0333*(income - 41112)){
                 co_contribution = ncc*0.5
             }
         else{
@@ -93,10 +93,10 @@ document.querySelector("#income").addEventListener('change', (event) => {
 
      total2 (nccArr);
     
-     if(total_ncc <= 100000){
+     if(total_ncc <= 110000){
      document.querySelector("#total_ncc").innerHTML = total_ncc; }
      else{
-      alert('Non-concessional contributionは年間100,000ドルを超えて拠出できません。');
+      alert('Non-concessional contributionは年間110,000ドルを超えて拠出できません。');
      }
      
      
@@ -113,10 +113,10 @@ document.querySelector("#ss").addEventListener('change', (event) => {
         
     total(cc)
         
-    if(total_cc <= 25000){
+    if(total_cc <= 27500){
         document.querySelector("#total_cc").innerHTML = total_cc; }
         else{
-        alert('Concessional contributionは年間25,000ドルを超えて拠出できません。');
+        alert('Concessional contributionは年間27,500ドルを超えて拠出できません。');
         }
     });
 
@@ -130,10 +130,10 @@ document.querySelector("#tdc").addEventListener('change', (event) => {
            
     total (cc);
         
-    if(total_cc <= 25000){
+    if(total_cc <= 27500){
         document.querySelector("#total_cc").innerHTML = total_cc; }
         else{
-        alert('Concessional contributionは年間25,000ドルを超えて拠出できません。');
+        alert('Concessional contributionは年間27,500ドルを超えて拠出できません。');
         }
     });
 
@@ -154,21 +154,21 @@ document.querySelector("#ncc").addEventListener('change', (event) => {
     nccArr[1] = parseFloat(ncc);
     
        
-    if(income <= 36813 && income > 0){
+    if(income <= 41112 && income > 0){
         if(ncc >= 1000){
                 co_contribution = 500;
         }
         else{
                 co_contribution = ncc*0.5;
     }}
-    else if(income <= 51813 && income > 36813){
+    else if(income <= 56112 && income > 41112){
         if(ncc >= 1000){
-                co_contribution = 500 - 0.0333*(income - 36813);
+                co_contribution = 500 - 0.0333*(income - 41112);
             }
-        else if(ncc*0.5 >= 500 - 0.0333*(income - 36813)){
-                co_contribution = 500 - 0.0333*(income - 36813);
+        else if(ncc*0.5 >= 500 - 0.0333*(income - 41112)){
+                co_contribution = 500 - 0.0333*(income - 41112);
             }
-        else if(ncc*0.5 <= 500 - 0.0333*(income - 36813)){
+        else if(ncc*0.5 <= 500 - 0.0333*(income - 41112)){
                 co_contribution = ncc*0.5
             }
         else{
@@ -181,10 +181,10 @@ document.querySelector("#ncc").addEventListener('change', (event) => {
     
     total2 (nccArr);
 
-    if(total_ncc <= 100000){
+    if(total_ncc <= 110000){
         document.querySelector("#total_ncc").innerHTML = Math.round(total_ncc); }
         else{
-        alert('Non-concessional contributionは年間100,000ドルを超えて拠出できません。');
+        alert('Non-concessional contributionは年間110,000ドルを超えて拠出できません。');
         }
     
     })
