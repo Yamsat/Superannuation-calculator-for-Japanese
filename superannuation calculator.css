@@ -1,0 +1,429 @@
+body {
+    display: grid;
+    grid-template-columns: 550px;
+    grid-template-rows: 15% 5% 40% 38%;
+
+}
+
+#zokusei {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    padding: 2% 2%;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#dob-group {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 200px 140px;
+    grid-template-rows: 100%;
+    padding: 10px 10px;
+}
+
+#birthday {
+    grid-column: 1/2;
+}
+
+#dob {
+    width: 100px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#nenrei {
+    grid-column: 2/3;
+}
+
+#age {
+    width: 100px;
+    height: 20px;
+    border: solid 1px;
+    float: right;
+    margin-top: 0%;
+}
+
+#income-group {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 10px 10px;
+}
+
+#income {
+    width: 100px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#retirement-group {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 210px 220px;
+    grid-template-rows: 100%;
+    padding: 10px 10px;
+}
+
+#taishoku-yotei {
+    grid-column: 1/2;
+}
+
+#retirement {
+    width: 100px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#taishoku-kikan {
+    grid-column: 2/3;
+}
+
+#time_to_retirement {
+    width: 100px;
+    height: 20px;
+    border: solid 1px;
+    float: right;
+    margin-top: 0%;
+}
+
+#balance {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#balance-group {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 10px 10px;
+
+}
+
+#current_balance {
+    width: 110px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#contributions {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    padding: 2% 2%;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#concessional_contribution {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#before-tax {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#sg-group {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 10px 10px;
+    width: 350px;
+}
+
+#sgc {
+    width: 110px;
+    height: 20px;
+    border: solid 1px;
+    float: right;
+    margin-top: 0;
+
+}
+
+#ss-group {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 10px 10px;
+}
+
+#ss {
+    width: 110px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#tdc-group {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    padding: 10px 10px;
+}
+
+#tdc {
+    width: 110px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#total-beforetax {
+   grid-column: 1/2;
+   grid-row: 5/6;
+   padding: 10px 10px;
+   width: 230px;
+}
+
+#total_cc {
+    width: 110px;
+    height: 20px;
+    border: solid 1px;
+    float: right;
+    margin-top: 0%;
+}
+
+#non_concessional_contribution {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#after-tax {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#ncc-group {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 10px 10px;
+}
+
+#ncc {
+    width: 110px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#cc-group {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 350px;
+    padding: 10px 10px;
+}
+
+#co_contribution {
+    width: 110px;
+    height: 20px;
+    float: right;
+    border: solid 1px;
+    margin-top: 0;
+}
+
+#listo-group {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 280px;
+    padding: 10px 10px;
+}
+
+#listo {
+    width: 110px;
+    height: 20px;
+    float: right;
+    border: solid 1px;
+    margin-top: 0;
+}
+
+#total-aftertax {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 230px;
+    padding: 10px 10px;
+}
+
+#total_ncc {
+    width: 110px;
+    height: 20px;
+    float: right;
+    border: solid 1px;
+    margin-top: 0;
+}
+
+#simulator {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 100px 70px;
+    height: 450px;
+    padding-top: 2%;
+    padding-left: 2%;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+#estimate {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#goal-group {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 200px;
+    padding: 10px 10px;
+}
+
+#goal {
+    width: 110px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#fr-group {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 10px 10px;
+}
+
+#future_return {
+    width: 50px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#fv-group {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 180px;
+    padding: 10px 10px;
+}
+
+#future_value {
+    width: 110px;
+    height: 20px;
+    float: right;
+    margin-top: 0;
+    border: solid 1px;
+}
+
+#rc-group {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 200px;
+    padding: 10px 10px;
+}
+
+#required_contribution {
+    width: 110px;
+    height: 20px;
+    float: right;
+    margin-top: 0;
+    border: solid 1px;
+}
+
+#rr-group {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 170px;
+    padding: 10px 10px;
+}
+
+#required_return {
+    width: 50px;
+    height: 20px;
+    float: right;
+    margin-top: 0;
+    border: solid 1px;
+}
+
+#costs {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+
+#costs-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#cost-value {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 170px 200px;
+    grid-template-rows: 100%;
+}
+
+#fee-rate {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#fees {
+    width: 50px;
+    height: 20px;
+    font-size: 1rem;
+}
+
+#fees-total {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#total_fees {
+    width: 110px;
+    height: 20px;
+    float: right;
+    margin-top: 0;
+    border: solid 1px;
+}
+
+#cal-button {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding-top: 20px;
+}
+
+#calculate {
+    width: 150px;
+    height: 40px;
+    margin-left: 175px;
+    border-radius: 3px;
+    border: solid;
+    font-size: 1rem;
+}
+
+

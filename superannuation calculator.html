@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>スーパーアニュエーション計算機</title>
+    </head>
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>スーパーアニュエーション計算機</title>
+        <link type="text/css" rel="stylesheet" href="superannuation calculator.css" />
+    </head>
+    <body>
+        <div id="zokusei">
+            <div id="dob-group">
+                <div id="birthday">
+                   <label for="dob">生年月日</label>
+                   <input type="text" id="dob" placeholder="yyyy/mm/dd" />
+                </div>
+                <div id="nenrei">
+                   <label>年齢</label><p id="age"></p>
+                </div>
+            </div>
+            <div id="income-group">
+                <label for="income">年収</label>
+                <input type="tel" id="income" value="0" />
+            </div>
+            <div id="retirement-group">
+                <div id="taishoku-yotei">
+                  <label for="retirement">退職予定日</label>
+                  <input type="text" id="retirement" placeholder="yyyy/mm/dd" />
+                </div>
+                <div id="taishoku-kikan">
+                  <lable>退職までの期間</label><p id="time_to_retirement"></p>
+                </div>
+            </div>
+        </div>
+        <div id="balance">
+            <div id="balance-group">
+               <label for="current_balance">現在の残高</label>
+               <input type='tel' id='current_balance' value="0" />
+            </div>
+        </div>
+        <div id="contributions">
+        <div id="concessional_contribution">
+            <div id="before-tax">
+                <h4>税引前拠出</h4>
+            </div>
+            <div id="sg-group">
+              <label>雇用主拠出(Super Guarantee)</label><p id="sgc"></p>
+            </div>
+            <div id="ss-group">
+              <label for="ss">給与天引き(Salary Sacrifice)</label>
+              <input type="tel" id="ss" value="0" />
+            </div>
+            <div id="tdc-group">
+              <label for="tdc">税控除可能拠出(Tax-deductible Contribution)</label>
+              <input type="tel" id="tdc" value="0" />
+            </div>
+            <div id="total-beforetax">
+              <label>税引前拠出合計</label>
+              <p id="total_cc"></p>
+            </div>
+        </div>
+        <div id="non_concessional_contribution">
+            <div id="after-tax">
+              <h4>税引後拠出</h4>
+            </div>
+            <div id="ncc-group">
+              <label for="ncc">非税優遇拠出(Non-concessional Contribution)</label>
+              <input type="tell" id="ncc" value="0" />
+            </div>
+            <div id="cc-group">
+              <label>政府補助拠出(Co-contribution)</label>
+              <p id="co_contribution"></p>
+            </div>
+            <div id="listo-group">
+              <lable>低所得税還付(LISTO)</lable>
+              <p id="listo"></p>
+            </div>
+            <div id="total-aftertax">
+              <label>税引後拠出合計</label>
+              <p id="total_ncc"></p>
+            </div>
+        </div>
+        </div>
+        <div id="simulator">
+        <div id="estimate">
+            <div id="goal-group">
+              <label for="goal">目標価値</label>
+              <input type="text" id="goal" />
+            </div>
+            <div id="fr-group">
+              <label for="future_return">予想利回り(％)</label>
+              <input type="text" id="future_return" />
+            </div>
+            <div id="fv-group">
+              <label>将来価値</label>
+              <p id="future_value"></p>
+            </div>
+            <div id="rc-group">
+              <label>必要拠出額</label>
+              <p id="required_contribution"></p>
+            </div>
+            <div id="rr-group">
+              <label>必要利回り(％)</label>
+              <p id="required_return"></p>
+            </div>
+        </div>
+        <div id="costs">
+            <div id="costs-title">
+              <h4>手数料</h4>
+            </div>
+            <div id="cost-value">
+            <div id="fee-rate">
+              <label for="fees">手数料率(％)</label>
+              <input type="text" id="fees" />
+            </div>
+            <div id="fees-total">
+              <label>手数料合計</label>
+              <p id="total_fees"></p>
+            </div>
+            </div>
+        </div>
+        <div id="cal-button">
+            <button id="calculate">計算</button>
+        </div>
+        </div>
+        <script type="text/javascript" src="superannuation calculator.js"></script>
+    </body>
+</html>
+
+
